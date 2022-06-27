@@ -57,7 +57,7 @@ export function useOptionalUser(): User | undefined {
 }
 export function useOptionalAdminUser(): User | null {
   const user = useOptionalUser();
-  if (!user || user.email !== ENV.ADMIN_EMAIL) {
+  if (!user || user.email !==  process.env.ADMIN_EMAIL) {
     return null;
   }
   return user

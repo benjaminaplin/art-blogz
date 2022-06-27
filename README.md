@@ -101,7 +101,7 @@ Prior to your first deployment, you'll need to do a few things:
 - Add a `SESSION_SECRET` to your fly app secrets, to do this you can run the following commands:
 
   ```sh
-  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app onewheel-blog-f1b4
+  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app art-blogz
   fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app onewheel-blog-f1b4-staging
   ```
 
